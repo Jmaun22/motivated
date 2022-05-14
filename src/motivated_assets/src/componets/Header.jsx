@@ -1,12 +1,13 @@
 import React from "react";
-import HighlightIcon from "@material-ui/icons/Highlight";
+import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
+
 
 function Header() {
   return (
     <header>
       <h1>
-        <HighlightIcon />
-        Keeper
+        <EmojiEventsIcon />
+        Motivated
       </h1>
     </header>
   );
