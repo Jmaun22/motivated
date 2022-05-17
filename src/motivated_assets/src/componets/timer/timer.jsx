@@ -3,7 +3,7 @@ import React from "react";
 
 
 const Timer = (props) => {
-
+   
     const time = Number(props.hours) + Number(props.minutes) + Number(props.seconds) * 60 * 60 * 60
 
     const [seconds, setSeconds] = useState(time);

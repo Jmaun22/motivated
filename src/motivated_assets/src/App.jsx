@@ -26,14 +26,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Button />
-      <Form />
-      <Modal />
-      <Test />
-
      
-
- 
+      
+  
 
        <Example onAdd={addTime}/> 
       {notes.map((noteItem, index) => {
