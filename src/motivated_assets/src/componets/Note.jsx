@@ -1,5 +1,3 @@
-import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
 
 function Note(props) {
   function handleClick() {
@@ -8,11 +6,9 @@ function Note(props) {
 
   return (
     <div className="note">
-      <h1>{props.title}</h1>
-      <p>{props.content}</p>
-      <button onClick={handleClick}>
-        <DeleteIcon />
-      </button>
+      <h1>hours{props.hours} minutes{props.minutes} seconds{props.seconds} </h1>
+
+
     </div>
   );
 }
