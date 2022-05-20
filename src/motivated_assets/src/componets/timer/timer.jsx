@@ -7,18 +7,7 @@ const Timer = (props) => {
    
     const time = Number(props.hours) + Number(props.minutes) + Number(props.seconds) * 60 * 60 * 60
 
-    function FormatTime(time){
 
-        const fromatedTime = new Date(time * 1000).toISOString().substring(11, 16)
-
-        return fromatedTime
-
-
-    }
-    console.log(time);
-    console.log(FormatTime(time))
-    const done = FormatTime(time)
-    console.log(done);
     const [seconds, setSeconds] = useState(time);
     const [isActive, setIsActive] = useState(false);
 
@@ -63,7 +52,7 @@ const Timer = (props) => {
         <div className="app">
 
             <div className="time">
-                {seconds }s
+                {seconds}s
             </div>
             <div className="row">
                 <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>

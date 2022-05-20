@@ -8,6 +8,8 @@ import Timer from "./componets/timer/timer"
 import Example from "./componets/timer/modal"
 import {Button, Form, Modal} from 'react-bootstrap';
 
+import TestTimer from "./componets/timer/testTimer"
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,12 +28,31 @@ function App() {
   return (
     <div>
       <Header />
+
      
       
   
-<div >
+
   <Example onAdd={addTime}  /> 
-  </div>
+
+  {notes.map((noteItem, index) => {
+        return (
+          
+          <TestTimer
+            key={index}
+            id={index}
+     
+            seconds={noteItem.seconds}
+            minutes={noteItem.minutes}
+            hours={noteItem.hours}
+
+       
+       
+            
+            />
+        );
+      })}
+
 
       {notes.map((noteItem, index) => {
         return (
@@ -46,18 +67,7 @@ function App() {
         );
       })}
 
-      {notes.map((noteItem, index) => {
-        return (
-          <Timer
-            key={index}
-            id={index}
-            hours={noteItem.hours}
-            minutes={noteItem.minutes}
-            seconds={noteItem.seconds}
-       
-          />
-        );
-      })} 
+
     
       <Footer />
     </div>
