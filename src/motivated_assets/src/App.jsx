@@ -29,16 +29,18 @@ function App() {
      
       
   
+<div >
+  <Example onAdd={addTime}  /> 
+  </div>
 
-       <Example onAdd={addTime}/> 
       {notes.map((noteItem, index) => {
         return (
           <Note
             key={index}
             id={index}
+            goal={noteItem.goal}
             hours={noteItem.hours}
-            minutes={noteItem.minutes}
-            seconds={noteItem.seconds}
+           
        
           />
         );
@@ -56,6 +58,7 @@ function App() {
           />
         );
       })} 
+    
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ function Note(props) {
 
   return (
     <div className="note">
-      <h1>hours{props.hours} minutes{props.minutes} seconds{props.seconds} </h1>
+      <h1>Working on {props.goal}!!! </h1>
 
 
     </div>

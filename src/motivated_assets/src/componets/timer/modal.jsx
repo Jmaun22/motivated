@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
+import { FormatAlignRight, FullscreenExit } from "../../../../../node_modules/@material-ui/icons/index";
 
 
 
@@ -58,9 +59,21 @@ function Example(props) {
 
     const handleShow = () => setShow(true);
 
+    const mystyle = {
+        color: "white",
+        backgroundColor: "DodgerBlue",
+        padding: "10px",
+        fontFamily: "Arial",
+      
+       
+        
+
+       
+      };
+
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={handleShow} style={mystyle}>
                 Set a Goal
             </Button>
 
@@ -76,6 +89,8 @@ function Example(props) {
                                 type="text"
                                 placeholder="I want to ace my test"
                                 autoFocus
+                                name="goal"
+                                onChange={handleTimeChange}
                             />
                             <Form.Label>Timer: Set time to work on your goal</Form.Label>
                             <Form.Control
