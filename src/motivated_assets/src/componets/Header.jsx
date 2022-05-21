@@ -7,7 +7,7 @@ function Header() {
     <header>
       <h1>
      
-        MOT<a><EmojiEventsIcon style={{width: 35, height: 55}}/></a>VATED
+        MOT<a><EmojiEventsIcon style={{width: 50, height: 55, color: "#303a40", marginBottom: 10}}/></a>VATED
 
        
       </h1>
