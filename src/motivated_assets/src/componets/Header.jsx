@@ -6,8 +6,10 @@ function Header() {
   return (
     <header>
       <h1>
-        <EmojiEventsIcon />
-        Motivated
+     
+        MOT<a><EmojiEventsIcon style={{width: 35, height: 55}}/></a>VATED
+
+       
       </h1>
     </header>
   );
