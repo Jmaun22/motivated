@@ -88,7 +88,7 @@ function Example(props) {
                             <Form.Label>Timer: Set time to work on your goal</Form.Label>
                             <Form.Control
                                 type="number"
-                                placeholder="hours"
+                                placeholder="length of long break time in minutes"
                                 name="hours"
                                 time="hours"
                                 autoFocus
@@ -98,7 +98,7 @@ function Example(props) {
                             />
                             <Form.Control
                                 type="number"
-                                placeholder="minutes"
+                                placeholder="length of short break time in minutes"
                                 name="minutes"
                                 time="minutes"
                                 autoFocus
@@ -107,7 +107,7 @@ function Example(props) {
                             />
                             <Form.Control
                                 type="number"
-                                placeholder="seconds"
+                                placeholder="length of working time in  Minutes"
                                 name="seconds"
                                 time="seconds"
                                 autoFocus

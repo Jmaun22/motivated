@@ -24,9 +24,9 @@ const TestTimer = (props) => {
 
     // long break
     // var workSec = workingMin * 60 
-    const workSec = workingMin;
-    const shortBreakSec = shortBreakMin;
-    const longBreakSec= longBreakMin;
+    const workSec = workingMin * 60;
+    const shortBreakSec = shortBreakMin * 60;
+    const longBreakSec= longBreakMin * 60;
 
 
 //     const totalTimeinSeconds = Number(props.seconds) + (Number(props.minutes)) * 60 + (Number(props.hours) * 60 * 60)
