@@ -6,7 +6,7 @@ function Note(props) {
 
   return (
     <div className="note">
-      <h1>Working on {props.goal}!!! </h1>
+      <h1 style={{color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Working on {props.goal}!!! </h1>
 
 
     </div>

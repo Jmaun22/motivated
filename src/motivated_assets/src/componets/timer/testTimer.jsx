@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ExploreOffOutlined } from "../../../../../node_modules/@material-ui/icons/index";
+import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import PauseCircleIcon from '@material-ui/icons/PauseCircleOutline';
 
 const TestTimer = (props) => {
 
@@ -183,13 +185,13 @@ useEffect(() => {
         {second < 9 ? "0" + second : second}
       </h1>
       <div className="row">
-                <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
-                    {isActive ? 'Pause' : 'Start'}
+                <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle} style={{backgroundColor: 'transparent', border: 'transparent', }}>
+                    {isActive ? <PauseCircleIcon style={{fontSize: '50', color: '#0ae0f4'}}/> :   <PlayCircleOutlineIcon style={{fontSize: '50', color: '#0ae0f4'}}/>}
                 </button>
-                <button className="button" onClick={reset}>
-                    Reset
-                </button>
+              
             </div>
+            
+         
     </>
   );
   }

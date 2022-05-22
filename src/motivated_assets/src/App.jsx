@@ -35,8 +35,24 @@ function App() {
 
   <Example onAdd={addTime}  /> 
 
+  <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}> 
   {notes.map((noteItem, index) => {
         return (
+          <Note
+            key={index}
+            id={index}
+            goal={noteItem.goal}
+            hours={noteItem.hours}
+           
+       
+          />
+        );
+      })}
+  
+  
+  {notes.map((noteItem, index) => {
+        return (
+       
           
           <TestTimer
             key={index}
@@ -54,18 +70,8 @@ function App() {
       })}
 
 
-      {notes.map((noteItem, index) => {
-        return (
-          <Note
-            key={index}
-            id={index}
-            goal={noteItem.goal}
-            hours={noteItem.hours}
-           
-       
-          />
-        );
-      })}
+     
+      </div>
 
 
     

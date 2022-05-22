@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import React from "react";
+
 import { FormatListNumbered } from '../../../../../node_modules/@material-ui/icons/index';
 
 
@@ -52,14 +53,15 @@ const Timer = (props) => {
         <div className="app">
 
             <div className="time">
+          
                 {seconds}s
             </div>
             <div className="row">
                 <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
-                    {isActive ? 'Pause' : 'Start'}
+                    {isActive ?   'pause' : 'Start'}
                 </button>
                 <button className="button" onClick={reset}>
-                    Reset
+              
                 </button>
             </div>
         </div>
