@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Header from "./componets/Header";
 import Footer from "./componets/Footer";
 import Note from "./componets/Note";
-import Test from "./componets/timer/test"
 
-import Timer from "./componets/timer/timer"
+
+
 import Example from "./componets/timer/modal"
-import {Button, Form, Modal} from 'react-bootstrap';
+
 
 import TestTimer from "./componets/timer/testTimer"
 
